@@ -1,0 +1,89 @@
+:root {
+  --main-color: goldenrod;
+}
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: var(--main-color);
+}
+header,
+footer {
+  background-image: linear-gradient(to right, black, red, green);
+}
+.test {
+  height: 100vh;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 2fr min-content;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, 1fr);
+}
+.one {
+  background-color: antiquewhite;
+  /* grid-row-start: 2;
+    grid-row-end: 3; */
+}
+.two {
+  background-color: aqua;
+}
+.three {
+  background-color: red;
+}
+.four {
+  background-color: lime;
+}
+.five {
+  background-color: blue;
+  /* grid-row-start: 2;
+    grid-row-end: 3; */
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 2em;
+  align-items: center;
+}
+.menu-items {
+  display: flex;
+  list-style: none;
+  color: aliceblue;
+}
+.menu-items > a {
+  margin: 0 0.5em;
+  font-weight: 900;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/* @media screen and (max-width: 700px){
+    .menu{
+        display: none;
+    } 
+} */
+.main-testimonials {
+  font-size: 0.7em;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1em;
+}
+.testimonials {
+  background-color: darkcyan;
+}

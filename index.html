@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- cdn links required to import react and react dom libraries... third one is for babel -->
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>React</title>
+  </head>
+  <body>
+    <div class="test">
+      <header id="header"></header>
+      <div class="main-container">
+        <div class="content one">one</div>
+        <div class="content two">two</div>
+        <div class="three">three</div>
+        <div class="content four">four</div>
+        <div class="content five">five</div>
+      </div>
+      <footer>copyright @Clifford</footer>
+    </div>
+    <script src="script.js" type="text/babel"></script>
+    <!--this implements babel in the called js file-->
+    <script src="vanilla.js"></script>
+  </body>
+</html>
